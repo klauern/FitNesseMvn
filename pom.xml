@@ -95,6 +95,9 @@
               <testRepositoryType>fitnesse</testRepositoryType>
               <testRepositoryUri>${basedir}/src/main/fitnesse/</testRepositoryUri>
               <!--<breakBuildOnFailure>true</breakBuildOnFailure>-->
+              <suites>
+                <suite>FrontPage.SecondTestSuite</suite>
+              </suites>
               <!--<tests>
                 <test>FitNesse.UserGuide.TwoMinuteExample</test>
               </tests>-->

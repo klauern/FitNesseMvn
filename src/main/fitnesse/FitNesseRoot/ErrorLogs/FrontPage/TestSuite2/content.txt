@@ -1,0 +1,12 @@
+!3 !-fit-!
+|'''Date: '''|!-9:25:18 PM (CST) on Sunday, December 20, 2009-!|
+|'''Test Page: '''|.FrontPage.SecondTestSuite|
+|'''Command: '''|!-java -cp fitnesse.jar:defaultPath fit.FitServer klauer-imac 8081 1-!|
+|'''Exit code: '''|!-1-!|
+|'''Time elapsed: '''|!-0.482 seconds-!|
+!3 !-slim-!
+|'''Date: '''|!-9:25:18 PM (CST) on Sunday, December 20, 2009-!|
+|'''Test Page: '''|.FrontPage.SecondTestSuite|
+|'''Command: '''|!-java -cp fitnesse.jar:defaultPath fitnesse.slim.SlimService  8086-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-0.648 seconds-!|
