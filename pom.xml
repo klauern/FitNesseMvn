@@ -70,22 +70,6 @@
           <testRepositoryUri>${basedir}/src/main/fitnesse</testRepositoryUri>
           <breakBuildOnFailure>false</breakBuildOnFailure>
           <stopAfterFirstFailure>false</stopAfterFirstFailure>
-          <!-- Add your own tests/suites inside the tags below as:
-            <suite>UseCaseView.....SuiteName</suite>
-            or
-            <test>UseCaseView....TestName</test>
-
-            Or you can create your own JUnit tests.  Copy the
-            src/test/java/com/alliantenergy/fitnesse/DetermineMegaWattsTest.java
-            for how to do this.
-           -->
-<!--          <suites>
-            <suite></suite>
-          </suites>
--->
-          <tests>
-            <test>SuiteResponderTests.SuiteTestResponders.TestPathSingleWildcard</test>
-          </tests>
         </configuration>
         <executions>
           <execution>
