@@ -21,7 +21,7 @@ import fitnesse.junit.FitNesseSuite.OutputDir;
  */
 @RunWith(FitNesseSuite.class)
 @Name("FitNesse.SuiteAcceptanceTests.SuiteSlimTests.ErikPragtBug")
-@FitnesseDir(".")
+@FitnesseDir("src/main/fitnesse")
 @OutputDir("target/fitnesse")
 public class EricPragtBug {
 

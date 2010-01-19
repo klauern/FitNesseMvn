@@ -15,7 +15,7 @@
     <fitnesse.runtime.port>18080</fitnesse.runtime.port>
   </properties>
 
-<repositories>
+  <!--<repositories>
   <repository>
     <id>neuri-maven</id>
     <url>http://maven.neuri.com</url>
@@ -40,7 +40,7 @@
     </releases>
   </pluginRepository>
 </pluginRepositories>
-
+-->
   <dependencies>
     <dependency>
       <groupId>org.fitnesse</groupId>
@@ -67,8 +67,9 @@
         <artifactId>maven-trinidad-plugin</artifactId>
         <version>${fitnesse.version}</version>
         <configuration>
-          <testRepositoryUri>${basedir}</testRepositoryUri>
+          <testRepositoryUri>${basedir}/src/main/fitnesse</testRepositoryUri>
           <breakBuildOnFailure>false</breakBuildOnFailure>
+          <stopAfterFirstFailure>false</stopAfterFirstFailure>
           <!-- Add your own tests/suites inside the tags below as:
             <suite>UseCaseView.....SuiteName</suite>
             or
@@ -78,8 +79,13 @@
             src/test/java/com/alliantenergy/fitnesse/DetermineMegaWattsTest.java
             for how to do this.
            -->
-          <!--<suites></suites>
-          <tests></tests>-->
+<!--          <suites>
+            <suite></suite>
+          </suites>
+-->
+          <tests>
+            <test>SuiteResponderTests.SuiteTestResponders.TestPathSingleWildcard</test>
+          </tests>
         </configuration>
         <executions>
           <execution>
@@ -99,27 +105,8 @@
           <testFailureIgnore>true</testFailureIgnore>
           <includes>
             <include>**/*Tests.class</include>
+            <include>**/*Bug.class</include>
           </includes>
-          <excludes>
-            <exclude>**/*IntegrationTests.class</exclude>
-            <exclude>**/*DaoTests.class</exclude>
-            <!--
-            TODO: The following is so most tests pass. These WILL need to be
-                  fixed.
-            -->
-            <exclude>**/*MergedCellsTests.class</exclude>
-            <exclude>**/*InsertFixtureTests.class</exclude>
-            <!--
-            Tests related to actual running FitNesse Suites.  These can
-            take a long time to complete if called.  To run these tests
-            manually, you can use the command-line:
-
-            $> mvn -Dtest=AllocationRulesSuiteInUat test
-
-            See: http://maven.apache.org/plugins/maven-surefire-plugin/examples/single-test.html
-            -->
-            <exclude>**/fitnesseservertests/</exclude>
-          </excludes>
         </configuration>
         <executions>
           <execution>
