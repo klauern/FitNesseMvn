@@ -9,7 +9,7 @@ In the standard distribution there is a file named ''run.bat'' for windows and '
         -e <days> {14} Number of days before page versions expire
         -o omit updates
         -a {user:pwd | user-file-name} enable authentication.
-        -i Install only, do not run fitnesse after install.
+        -i Install only, do not run fitnesse after install. 
         -c <command> Run the command (same as restful url) and then exit.  Return status is the number of test pages that failed as a result of the command.
 }}}
 The values shown between braces are the default values.
@@ -39,3 +39,11 @@ This command will send an HTTP request to the designated server.  If the server 
 
 Alternatively you may manually type a URL to shutdown a server.
 http://hostname:port/?responder=shutdown
+
+!2 Running from JUnit
+
+see RunningFromJunit
+
+!2 Running from Maven
+
+see RunningFromMaven

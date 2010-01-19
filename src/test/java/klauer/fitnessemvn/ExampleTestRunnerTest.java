@@ -11,17 +11,13 @@ package klauer.fitnessemvn;
 
 import org.junit.runner.RunWith;
 
-import fitnesse.trinidad.FitnesseSuite;
-import fitnesse.trinidad.FitnesseSuite.Engine;
-import fitnesse.trinidad.FitnesseSuite.FitnesseDir;
-import fitnesse.trinidad.FitnesseSuite.Name;
-import fitnesse.trinidad.FitnesseSuite.OutputDir;
-import fitnesse.trinidad.SlimTestEngine;
+import fitnesse.junit.FitNesseSuite;
+import fitnesse.junit.FitNesseSuite.FitnesseDir;
+import fitnesse.junit.FitNesseSuite.Name;
+import fitnesse.junit.FitNesseSuite.OutputDir;
 
-
-@RunWith(FitnesseSuite.class)
+@RunWith(FitNesseSuite.class)
 @Name("FrontPage.TestSuite") // We are running a SUITE of tests.
 @FitnesseDir("src/main/fitnesse")
-@Engine(SlimTestEngine.class) // Fit is default, so specify engine as Slim
 @OutputDir("target/fitnesse") //Specify an absolute or relative path
 public class ExampleTestRunnerTest {}

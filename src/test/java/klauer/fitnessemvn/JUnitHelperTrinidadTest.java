@@ -13,10 +13,8 @@
 
 package klauer.fitnessemvn;
 
-import fitnesse.trinidad.FitNesseRepository;
-import fitnesse.trinidad.FitTestEngine;
-import fitnesse.trinidad.JUnitHelper;
-import fitnesse.trinidad.TestRunner;
+import fitnesse.junit.JUnitHelper;
+
 import java.io.File;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,15 +25,13 @@ public class JUnitHelperTrinidadTest {
 
   @Before
   public void initHelper() throws Exception {
-    helper = new JUnitHelper(new TestRunner(
-            new FitNesseRepository("src/main/fitnesse"),
-            new FitTestEngine(),
-            new File(System.getProperty("java.io.tmpdir"), "fitnesse").getAbsolutePath()));
+    helper = new JUnitHelper(".", "target");
   }
 
   @Test
   public void runSingleTest() throws Exception {
     helper.assertTestPasses("FitNesse.UserGuide.TwoMinuteExample");
+    helper.assertSuitePasses("FrontPage.SecondTestSuite");
   }
 
 }
