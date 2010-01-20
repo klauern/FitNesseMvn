@@ -31,8 +31,8 @@ public class JUnitHelperTrinidadTest {
   /**
    * Produces an exception, since one of the two asserts failed.  
    * 
-   * The concern with using this method is that runSomeTests() will be
-   * flagged as having failed, rather than the FitNesse page itself. 
+   * The concern with using this method is that runSomeTests() won't even
+   * flag as having failed, rather than the FitNesse page itself.
    *
    * Also, should the failure occur in a suite, you have almost no way 
    * to know which test in that suite failed, or even which assert below
@@ -41,7 +41,7 @@ public class JUnitHelperTrinidadTest {
    */
   @Test
   public void runSomeTests() throws Exception {
-    helper.assertTestPasses("FitNesse.UserGuide.TwoMinuteExample");
+    helper.assertTestPasses("FrontPage.ExceptionThrowingWikiTest");
     helper.assertSuitePasses("FrontPage.SecondTestSuite");
   }
 

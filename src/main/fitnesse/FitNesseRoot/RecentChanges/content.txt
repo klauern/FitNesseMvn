@@ -1,6 +1,6 @@
+|FrontPage.SecondTestSuite.ExampleTest2||10:52:38 Wed, Jan 20, 2010|
 |FrontPage.ExceptionThrowingTest||10:26:20 Wed, Jan 20, 2010|
 |FrontPage||10:24:55 Wed, Jan 20, 2010|
-|FrontPage.SecondTestSuite.ExampleTest2||10:21:47 Wed, Jan 20, 2010|
 |FitNesse.SuiteAcceptanceTests.SuiteSlimTests.ErikPragtBug||10:08:10 Wed, Jan 20, 2010|
 |FrontPage.TestSuite.ExampleTest||13:43:43 Tue, Jan 19, 2010|
 |FrontPage.SecondTestSuite||21:27:57 Sun, Dec 20, 2009|

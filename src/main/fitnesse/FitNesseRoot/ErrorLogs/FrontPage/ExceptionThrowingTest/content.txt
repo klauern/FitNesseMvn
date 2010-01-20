@@ -1,6 +1,6 @@
 !3 !-fit-!
-|'''Date: '''|!-10:26:44 AM (CST) on Wednesday, January 20, 2010-!|
+|'''Date: '''|!-10:54:44 AM (CST) on Wednesday, January 20, 2010-!|
 |'''Test Page: '''|.FrontPage.ExceptionThrowingTest|
 |'''Command: '''|!-java -cp fitnesse.jar:defaultPath fit.FitServer a03182-ubuntu 18080 1-!|
 |'''Exit code: '''|!-1-!|
-|'''Time elapsed: '''|!-0.342 seconds-!|
+|'''Time elapsed: '''|!-0.373 seconds-!|
