@@ -8,18 +8,12 @@ import fitnesse.junit.FitNesseSuite.FitnesseDir;
 import fitnesse.junit.FitNesseSuite.Name;
 import fitnesse.junit.FitNesseSuite.OutputDir;
 
-/**
- * This test will run a bulit-in test from the FitNesse Suite itself:
- * http://localhost:8080/FitNesse.SuiteAcceptanceTests.SuiteSlimTests.ErikPragtBug
- */
 @RunWith(FitNesseSuite.class)
-@Name("FitNesse.SuiteAcceptanceTests.SuiteSlimTests.ErikPragtBug")
+@Name("FrontPage.ExceptionThrowingTest") // We are running a SUITE of tests.
 @FitnesseDir("src/main/fitnesse")
-@OutputDir("target/fitnesse")
-public class EricPragtBug {
-
+@OutputDir("target/fitnesse") //Specify an absolute or relative path
+public class ThrowSomeExceptionWikiTest {
+  
   @Test
-  public void dummy(){
-
-  }
+  public void dummy() {}
 }

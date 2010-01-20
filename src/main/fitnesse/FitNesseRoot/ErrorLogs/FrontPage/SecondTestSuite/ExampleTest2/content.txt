@@ -1,0 +1,6 @@
+!3 !-slim-!
+|'''Date: '''|!-10:21:49 AM (CST) on Wednesday, January 20, 2010-!|
+|'''Test Page: '''|.FrontPage.SecondTestSuite.ExampleTest2|
+|'''Command: '''|!-java -cp fitnesse.jar:defaultPath fitnesse.slim.SlimService  8087-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-0.396 seconds-!|

@@ -14,3 +14,4 @@ To add your first "page", click the [[Edit][FrontPage?edit]] button and add a [[
 
 [[TestSuite][FrontPage.TestSuite]]
 [[SecondTestSuite][FrontPage.SecondTestSuite]]
+[[ExceptionThrowingTest][FrontPage.ExceptionThrowingTest]]

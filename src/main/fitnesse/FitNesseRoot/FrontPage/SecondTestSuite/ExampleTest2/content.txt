@@ -2,7 +2,13 @@
 
 !define TEST_SYSTEM {slim}
 
-|eg.Division|
+!|Import                                        |
+|klauer.fitnessemvn.exception.ThrowSomeException|
+
+
+This suite will fail and throw exceptions.
+
+|eg.Division                    |
 |numerator|denominator|quotient?|
 |10       |2          |5.0      |
 |12.6     |3          |4.2      |

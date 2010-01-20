@@ -1,0 +1,4 @@
+|Import                      |
+|klauer.fitnessemvn.exception|
+
+|script|throw some exception|

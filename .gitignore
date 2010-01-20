@@ -1,1 +1,3 @@
 target/*
+fitnesse.jar
+src/main/fitnesse/files/testResults/
