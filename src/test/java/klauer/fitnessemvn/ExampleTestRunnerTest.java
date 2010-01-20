@@ -9,6 +9,7 @@
  */
 package klauer.fitnessemvn;
 
+import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import fitnesse.junit.FitNesseSuite;
@@ -20,4 +21,8 @@ import fitnesse.junit.FitNesseSuite.OutputDir;
 @Name("FrontPage.TestSuite") // We are running a SUITE of tests.
 @FitnesseDir("src/main/fitnesse")
 @OutputDir("target/fitnesse") //Specify an absolute or relative path
-public class ExampleTestRunnerTest {}
+public class ExampleTestRunnerTest {
+  
+  @Test
+  public void dummy() {}
+}

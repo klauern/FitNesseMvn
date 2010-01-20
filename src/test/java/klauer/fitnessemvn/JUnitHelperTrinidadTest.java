@@ -25,11 +25,17 @@ public class JUnitHelperTrinidadTest {
 
   @Before
   public void initHelper() throws Exception {
-    helper = new JUnitHelper(".", "target");
+    helper = new JUnitHelper("src/main/fitnesse", "target");
   }
 
+  /**
+   * Produces an exception, since one of the two asserts failed.  It doesn't
+   * provide any sort of detail on what either assert does, it merely states
+   * that it was expecting 0 errors, but found something more than that.
+   * @throws Exception
+   */
   @Test
-  public void runSingleTest() throws Exception {
+  public void runSomeTests() throws Exception {
     helper.assertTestPasses("FitNesse.UserGuide.TwoMinuteExample");
     helper.assertSuitePasses("FrontPage.SecondTestSuite");
   }

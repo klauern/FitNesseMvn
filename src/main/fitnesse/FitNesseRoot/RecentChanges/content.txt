@@ -1,3 +1,4 @@
+|FitNesse.SuiteAcceptanceTests.SuiteSlimTests.ErikPragtBug||15:00:40 Tue, Jan 19, 2010|
 |FrontPage.TestSuite.ExampleTest||13:43:43 Tue, Jan 19, 2010|
 |FrontPage||21:28:27 Sun, Dec 20, 2009|
 |FrontPage.SecondTestSuite||21:27:57 Sun, Dec 20, 2009|

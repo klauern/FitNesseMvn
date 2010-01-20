@@ -4,5 +4,5 @@
 
 !|script|
 |check|echo string|$VALUE|Bob|
-|check|echo string|$VALUEX|bill|
+|check|echo string|$VALUEX|biawll|
 |check|echo string|$VALUE $VALUEX|Bob bill|
