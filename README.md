@@ -33,7 +33,7 @@ Some other examples to run:
 
 In each of these examples, output isn't necessarily correlated to expectations.
 
-=== JUnitHelperTrinidadTest ===
+### JUnitHelperTrinidadTest ###
 In this test, I try two things:
 
  1. Run the [FrontPage.ExceptionThrowingWikiTest][4] and assert that it passed (it 
