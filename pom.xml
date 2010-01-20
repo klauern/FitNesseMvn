@@ -73,7 +73,7 @@
           <testFailureIgnore>true</testFailureIgnore>
           <includes>
             <include>**/JUnitHelperTrinidadTest.class</include>
-            <include>**/*Bug.class</include>
+            <!--<include>**/*Bug.class</include>-->
           </includes>
         </configuration>
         <executions>
