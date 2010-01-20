@@ -42,9 +42,9 @@ In this test, I try two things:
  should).
 
 What I would expect is that the JUnit result shows that the first test threw an
-exception, and the second one passed.  What happens is different, however.
-
- * No output in target/surefire-reports/ for the JUnitHelperTrinidadTest at all.
+exception, and the second one passed.  However, no output in target/surefire-reports/
+for the JUnitHelperTrinidadTest shows up at all.  Instead, a 0 byte file is there,
+so it probably exited prematurely before generating test results.
 
 
 Where I've been pulling these examples from:
