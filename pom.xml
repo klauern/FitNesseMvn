@@ -8,46 +8,21 @@
   <version>1.0-SNAPSHOT</version>
 
   <properties>
-    <fitnesse.version>20100103</fitnesse.version>
-    <trinidad.version>20090818</trinidad.version>
+    <fitnesse.version>20140201</fitnesse.version>
+    <trinidad.version>20120309</trinidad.version>
     <fitnesse.runtime.workingDirectory>src/main/fitnesse</fitnesse.runtime.workingDirectory>
     <fitnesse.runtime.daysToKeepVersions>0</fitnesse.runtime.daysToKeepVersions>
     <fitnesse.runtime.port>18080</fitnesse.runtime.port>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <repositories>
-    <repository>
-      <id>neuri-maven</id>
-      <url>http://maven.neuri.com</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>neuri-maven</id>
-      <name>Trinidad Fitnesse Plugin</name>
-      <url>http://maven.neuri.com/</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </pluginRepository>
-  </pluginRepositories>
 
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-trinidad-plugin</artifactId>
-        <version>${fitnesse.version}</version>
+      <groupId>org.linuxstuff.maven</groupId>
+      <artifactId>trinidad-maven-plugin</artifactId>
+      <version>20120309</version>
         <configuration>
           <testRepositoryUri>${basedir}/src/main/fitnesse</testRepositoryUri>
           <breakBuildOnFailure>false</breakBuildOnFailure>
@@ -89,6 +64,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
+        <version>3.0.2</version>
         <configuration>
           <encoding>${project.build.sourceEncoding}</encoding>
         </configuration>
@@ -140,8 +116,8 @@
       <version>${fitnesse.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.neuri.tdd</groupId>
-      <artifactId>fitnesserunner</artifactId>
+      <groupId>org.linuxstuff.maven</groupId>
+      <artifactId>trinidad-maven-plugin</artifactId>
       <version>${trinidad.version}</version>
     </dependency>
     <dependency>

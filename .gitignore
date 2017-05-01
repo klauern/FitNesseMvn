@@ -2,3 +2,5 @@ target/*
 fitnesse.jar
 src/main/fitnesse/FitNesseRoot/files/testResults/
 src/main/fitnesse/FitNesseRoot/ErrorLogs/
+.idea
+*.iml
